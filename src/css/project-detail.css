@@ -1,0 +1,331 @@
+.project-hero {
+  padding: 8rem 1.5rem 4rem;
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+}
+
+.project-hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.project-hero-description {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 1024px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.project-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.project-meta-text {
+  font-weight: 600;
+  color: #374151;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.project-gallery {
+  padding: 0 1.5rem 4rem;
+}
+
+.project-gallery-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.project-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.project-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.project-gallery-item:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.project-gallery-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* 👈 this ensures full image shows without cropping */
+  transition: transform 0.5s ease;
+  background-color: #f3f4f6; /* Optional: gray bg if image doesn’t fill area */
+  max-height: 24rem; /* Limit height but keep ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+.project-gallery-item:hover .project-gallery-image {
+  transform: scale(1.05);
+}
+
+.project-features {
+  padding: 4rem 1.5rem;
+  background-color: #f9fafb;
+}
+
+.project-features-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.project-features-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.project-feature-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.project-feature-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.project-feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.project-feature-description {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.project-challenges {
+  padding: 4rem 1.5rem;
+}
+
+.project-challenges-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.project-challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+.project-challenge-card {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.project-challenge-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.project-challenge-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-challenge-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-challenge-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.project-challenge-dot.red {
+  background-color: #ef4444;
+}
+
+.project-challenge-dot.green {
+  background-color: #10b981;
+}
+
+.project-challenge-text {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.project-cta {
+  padding: 4rem 1.5rem;
+  background-color: #f9fafb;
+}
+
+.project-cta-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-cta-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.project-cta-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 768px;
+  margin: 0 auto 3rem;
+}
+
+.project-cta-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .project-hero-title {
+    font-size: 3.75rem;
+  }
+
+  .project-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-challenges-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-cta-title {
+    font-size: 2.25rem;
+  }
+
+  .project-cta-actions {
+    flex-direction: row;
+  }
+
+  .project-gallery-image {
+    height: 24rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-hero-title {
+    font-size: 4.5rem;
+  }
+
+  .project-features-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+
+
+
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-modal-backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px);
+}
+
+.image-modal-content {
+  position: relative;
+  z-index: 10000;
+  max-width: 90vw;
+  max-height: 90vh;
+  padding: 1rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.image-modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.image-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
