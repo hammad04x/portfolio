@@ -316,7 +316,7 @@ export default function HomePage() {
             >
               <h3 className="completed-project-title">E-commerce Platform</h3>
               <p className="completed-project-desc">
-                A full-featured E-commerce website with product listings, authentication, and admin dashboard using MERN stack.
+                A full-featured E-commerce website with product listings, authentication, and admin dashboard using Express.js, React.js and Node.js.
               </p>
             </motion.div>
 
