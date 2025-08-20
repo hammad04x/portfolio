@@ -1,8 +1,8 @@
 {
   "outputDirectory": "dist",
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/*",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
