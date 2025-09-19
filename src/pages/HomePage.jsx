@@ -188,7 +188,7 @@ export default function HomePage() {
             </h1>
 
             <p className="hero-description">
-              Intern at <span className="hero-description-highlight">Valudas Tech Park</span>, passionate about creating
+              Full Time at <span className="hero-description-highlight">Valudas Tech Park</span>, passionate about creating
               modern web experiences with clean code and innovative solutions.
             </p>
 
@@ -234,7 +234,7 @@ export default function HomePage() {
             <div className="section-divider" />
             <p className="section-description">
               I'm currently working as a{" "}
-              <span style={{ fontWeight: 600, color: "#1f2937" }}>Full Stack Developer Intern</span> at Valudas Tech
+              <span style={{ fontWeight: 600, color: "#1f2937" }}>Full Stack Developer Full Time</span> at Valudas Tech
               Park, where I'm gaining hands-on experience in modern web development. I've successfully completed an
               E-commerce project and am passionate about creating efficient, scalable web applications.
             </p>
@@ -410,9 +410,9 @@ export default function HomePage() {
               viewport={{ once: true }}
               className="experience-card"
             >
-              <h3 className="experience-role">Full Stack Developer Intern</h3>
+              <h3 className="experience-role">Full Stack Developer Full Time</h3>
               <p className="experience-company">Valudas Tech Park</p>
-              <p className="experience-duration">December 2024 – Present</p>
+              <p className="experience-duration">September 2024 – Present</p>
               <p className="experience-desc">
                 Working on dynamic web apps using React and Node.js. Built internal tools, worked with REST APIs,
                 and improved code performance across projects.

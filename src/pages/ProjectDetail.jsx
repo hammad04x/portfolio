@@ -261,31 +261,7 @@ export default function ProjectDetail() {
       </section>
 
       {/* CTA Section */}
-      <section className="project-cta">
-        <div className="project-cta-container">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="project-cta-title">Interested in this project?</h3>
-            <p className="project-cta-description">Check out the live demo or explore the source code on GitHub</p>
-
-            <div className="project-cta-actions">
-              <Button size="lg" style={{ padding: "1rem 2rem", fontSize: "1rem", fontWeight: 600 }}>
-                <ExternalLink size={20} />
-                <span>View Live Demo</span>
-              </Button>
-              <Button size="lg" variant="outline" style={{ padding: "1rem 2rem", fontSize: "1rem", fontWeight: 600 }}>
-                <Github size={20} />
-                <span>View Source Code</span>
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
+  
       <Footer />
     </div>
   )
