@@ -141,7 +141,7 @@ export default function HomePage() {
           "https://github.com/hammad04x",
           "https://www.linkedin.com/in/hammad-jagarala-240b83260/",
           "https://www.instagram.com/hammad_jagarala/"
-        ]
+        ] 
       }
     `}
         </script>
@@ -452,7 +452,7 @@ export default function HomePage() {
               >
                 <h3 className="experience-role">Full Stack Developer Full Time</h3>
                 <p className="experience-company">Valudas Tech Park</p>
-                <p className="experience-duration">September 2024 – Present</p>
+                <p className="experience-duration">June 2024 – Present</p>
                 <p className="experience-desc">
                   Working on dynamic web apps using React and Node.js. Built internal tools, worked with REST APIs,
                   and improved code performance across projects.

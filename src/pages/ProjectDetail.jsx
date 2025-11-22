@@ -26,7 +26,7 @@ const projectData = {
     description:
       "A comprehensive e-commerce platform that provides a seamless shopping experience for users and powerful management tools for administrators. Built with modern web technologies and following best practices for performance, security, and user experience.",
     duration: "2 months",
-    completedDate: "March 2025",
+    completedDate: "July 2025",
     technologies: ["React", "Node.js", "Express", "CSS", "Razorpay", "Figma", "Mysql"],
     images: [
       zepx1,
