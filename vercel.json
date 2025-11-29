@@ -1,6 +1,9 @@
 {
-  "outputDirectory": "dist",
+  "cleanUrls": true,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/projects/:slug",
+      "destination": "/index.html"
+    }
   ]
 }
