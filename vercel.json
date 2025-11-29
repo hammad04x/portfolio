@@ -2,7 +2,11 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/projects/:slug",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/projects/:slug/*",
       "destination": "/index.html"
     }
   ]
