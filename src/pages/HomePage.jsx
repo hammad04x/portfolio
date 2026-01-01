@@ -153,7 +153,7 @@ export default function HomePage() {
           <div className="navbar-container">
             <div className="navbar-content">
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="navbar-logo">
-                HAMMAD
+                HAMMAAD
               </motion.div>
 
               <div className="navbar-menu">
