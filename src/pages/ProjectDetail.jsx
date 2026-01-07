@@ -117,7 +117,7 @@ export default function ProjectDetail() {
       </Helmet>
 
       <div style={{ minHeight: "100vh", backgroundColor: "white" }}>
-        <Header showBackButton={true} title={project.title} />
+        <Header showBackButton={true}  />
 
         {/* Hero Section */}
         <section className="project-hero">
