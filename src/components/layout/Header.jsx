@@ -19,7 +19,7 @@ export function Header({ showBackButton = false, title }) {
             )}
 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="navbar-logo">
-              {title || "Portfolio"}
+              {title }
             </motion.div>
           </div>
 
