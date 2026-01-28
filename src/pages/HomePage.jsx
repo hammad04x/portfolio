@@ -228,7 +228,7 @@ export default function HomePage() {
               </h1>
 
               <p className="hero-description">
-                Full Time at <span className="hero-description-highlight">Valudas Tech Park</span>, passionate about creating
+                Trainee at <span className="hero-description-highlight">Valudas Tech Park</span>, passionate about creating
                 modern web experiences with clean code and innovative solutions.
               </p>
 
@@ -241,8 +241,19 @@ export default function HomePage() {
                 <Button size="lg" onClick={() => scrollToSection("projects")}>
                   View My Work
                 </Button>
-                <Button size="lg" variant="outline" onClick={() => scrollToSection("contact")}>
+                <Button size="lg" onClick={() => scrollToSection("contact")}>
                   Get In Touch
+                </Button>
+                   <Button  asChild>
+                  <a
+                    href="/Hammad_Jagarala_Resume.pdf"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Download size={16} />
+                    <span>Download Resume</span>
+                  </a>
                 </Button>
               </motion.div>
             </motion.div>
@@ -274,7 +285,7 @@ export default function HomePage() {
               <div className="section-divider" />
               <p className="section-description">
                 I'm currently working as a{" "}
-                <span style={{ fontWeight: 600, color: "#1f2937" }}>Full Stack Developer Full Time</span> at Valudas Tech
+                <span style={{ fontWeight: 600, color: "#1f2937" }}>Full Stack Developer Trainee</span> at Valudas Tech
                 Park, where I'm gaining hands-on experience in modern web development. I've successfully completed an
                 E-commerce project and am passionate about creating efficient, scalable web applications.
               </p>
@@ -450,7 +461,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 className="experience-card"
               >
-                <h3 className="experience-role">Full Stack Developer Full Time</h3>
+                <h3 className="experience-role">Full Stack Developer Trainee</h3>
                 <p className="experience-company">Valudas Tech Park</p>
                 <p className="experience-duration">June 2025 – Present</p>
                 <p className="experience-desc">

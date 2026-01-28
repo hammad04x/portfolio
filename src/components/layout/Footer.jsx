@@ -88,7 +88,7 @@ export function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <div className="footer-copyright">© 2024 Portfolio. All rights reserved.</div>
+          <div className="footer-copyright">© 2025 Portfolio. All rights reserved.</div>
 
           <div className="footer-actions">
             {/* <Button size="sm">
