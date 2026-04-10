@@ -77,7 +77,7 @@ const projectData = {
 
   "ecommerce-website": {
     title: "ZepX E-commerce Platform",
-    date: "Aug 2024",
+    date: "February 2025",
     role: "Full Stack Developer",
     description: "A comprehensive e-commerce solution with dynamic product management, JWT authentication, and secure payment processing via Razorpay. Built completely from scratch to handle real-world shopping experiences.",
     image: zepxImage,
