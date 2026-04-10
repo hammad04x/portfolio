@@ -5,6 +5,11 @@ import path from "path"
 export default defineConfig({
   base: "/",
   plugins: [react()],
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    emptyOutDir: true
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

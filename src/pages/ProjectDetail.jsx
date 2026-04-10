@@ -106,7 +106,7 @@ export default function ProjectDetail() {
 
   if (!project) {
     return (
-      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--bg-main)", color: "var(--text-main)" }}>
         <h1 style={{ fontSize: "2rem" }}>Project not found</h1>
         <Button asChild style={{ marginLeft: "2rem" }}><Link to="/">Return Home</Link></Button>
       </div>
