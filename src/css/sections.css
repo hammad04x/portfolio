@@ -437,12 +437,56 @@
 .contact-split {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4rem;
+  gap: 2rem;
+  
+  width: 100%;
+  min-width: 0;
+}
+
+/* ── Contact form mobile fixes ── */
+.contact-split .bento-box {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.contact-split form {
+  padding: 1.5rem !important;
+}
+
+.contact-split input,
+.contact-split textarea {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+@media (min-width: 480px) {
+  .contact-split form {
+    padding: 2rem !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .contact-split form {
+    padding: 2.5rem !important;
+  }
+  .contact-split {
+    gap: 3rem;
+  }
 }
 
 @media(min-width: 768px) {
-  .section-title { font-size: 3.5rem; }
-  .pf-title { font-size: 3rem; }
+  .section-title {
+    font-size: 3.5rem;
+  }
+
+  .pf-title {
+    font-size: 3rem;
+  }
+
   .exp-tabs-list {
     flex-direction: column;
     border-right: 2px solid var(--border);
@@ -450,7 +494,12 @@
     gap: 0.5rem;
     overflow-x: visible;
   }
-  .exp-tabs-container { grid-template-columns: 1fr 2.5fr; gap: 3rem; }
+
+  .exp-tabs-container {
+    grid-template-columns: 1fr 2.5fr;
+    gap: 3rem;
+  }
+
   .exp-tab-button {
     border-bottom: none;
     border-left: 2px solid transparent;
@@ -458,6 +507,7 @@
     padding: 1rem 1.5rem;
     margin-left: -2px;
   }
+
   .exp-tab-button.active {
     border-bottom-color: transparent;
     border-left-color: var(--brand-primary);
@@ -465,12 +515,26 @@
 }
 
 @media(min-width: 1024px) {
-  .about-bento-grid { grid-template-columns: 2fr 1fr; }
+  .about-bento-grid {
+    grid-template-columns: 2fr 1fr;
+  }
 
-  .contact-split { grid-template-columns: 1fr 1fr; }
-  .project-featured:nth-child(even) { grid-template-columns: 1fr 1.2fr; }
-  .project-featured:nth-child(even) .pf-image { order: 2; }
-  .project-featured:nth-child(odd) { grid-template-columns: 1.2fr 1fr; }
+  .contact-split {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .project-featured:nth-child(even) {
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .project-featured:nth-child(even) .pf-image {
+    order: 2;
+  }
+
+  .project-featured:nth-child(odd) {
+    grid-template-columns: 1.2fr 1fr;
+  }
 }
 
 

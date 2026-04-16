@@ -426,26 +426,26 @@ export default function HomePage() {
                     <p style={{ color: "var(--text-muted)" }}>Thanks for reaching out — I'll get back to you within 24 hours.</p>
                   </div>
                 ) : (
-                <form className="bento-box" style={{ padding: "2.5rem", display: "grid", gap: "1.5rem", background: "var(--bg-surface)" }} onSubmit={handleFormSubmit}>
-                  <div style={{ display: "grid", gap: "0.5rem" }}>
-                    <label htmlFor="name" style={{ fontSize: "0.875rem", fontWeight: 700, color: "var(--text-main)" }}>Name</label>
-                    <input id="name" type="text" name="name" placeholder="John Doe" style={{ padding: "0.8rem 1rem", borderRadius: "0.5rem", border: "1px solid var(--border)", background: "transparent", fontFamily: "inherit" }} required />
-                    <ValidationError prefix="Name" field="name" errors={formState.errors} style={{ color: "red", fontSize: "0.8rem" }} />
-                  </div>
-                  <div style={{ display: "grid", gap: "0.5rem" }}>
-                    <label htmlFor="email" style={{ fontSize: "0.875rem", fontWeight: 700, color: "var(--text-main)" }}>Email</label>
-                    <input id="email" type="email" name="email" placeholder="john@example.com" style={{ padding: "0.8rem 1rem", borderRadius: "0.5rem", border: "1px solid var(--border)", background: "transparent", fontFamily: "inherit" }} required />
-                    <ValidationError prefix="Email" field="email" errors={formState.errors} style={{ color: "red", fontSize: "0.8rem" }} />
-                  </div>
-                  <div style={{ display: "grid", gap: "0.5rem" }}>
-                    <label htmlFor="message" style={{ fontSize: "0.875rem", fontWeight: 700, color: "var(--text-main)" }}>Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="How can I help you?" style={{ padding: "0.8rem 1rem", borderRadius: "0.5rem", border: "1px solid var(--border)", background: "transparent", fontFamily: "inherit", resize: "vertical" }} required></textarea>
-                    <ValidationError prefix="Message" field="message" errors={formState.errors} style={{ color: "red", fontSize: "0.8rem" }} />
-                  </div>
-                  <Button type="submit" disabled={formState.submitting} style={{ width: "100%", justifyContent: "center" }}>
-                    {formState.submitting ? "Sending…" : "Send Message"}
-                  </Button>
-                </form>
+                  <form className="bento-box" style={{ padding: "2.5rem", display: "grid", gap: "1.5rem", background: "var(--bg-surface)" }} onSubmit={handleFormSubmit}>
+                    <div style={{ display: "grid", gap: "0.5rem" }}>
+                      <label htmlFor="name" style={{ fontSize: "0.875rem", fontWeight: 700, color: "var(--text-main)" }}>Name</label>
+                      <input id="name" type="text" name="name" placeholder="John Doe" style={{ padding: "0.8rem 1rem", borderRadius: "0.5rem", border: "1px solid var(--border)", background: "transparent", fontFamily: "inherit" }} required />
+                      <ValidationError prefix="Name" field="name" errors={formState.errors} style={{ color: "red", fontSize: "0.8rem" }} />
+                    </div>
+                    <div style={{ display: "grid", gap: "0.5rem" }}>
+                      <label htmlFor="email" style={{ fontSize: "0.875rem", fontWeight: 700, color: "var(--text-main)" }}>Email</label>
+                      <input id="email" type="email" name="email" placeholder="john@example.com" style={{ padding: "0.8rem 1rem", borderRadius: "0.5rem", border: "1px solid var(--border)", background: "transparent", fontFamily: "inherit" }} required />
+                      <ValidationError prefix="Email" field="email" errors={formState.errors} style={{ color: "red", fontSize: "0.8rem" }} />
+                    </div>
+                    <div style={{ display: "grid", gap: "0.5rem" }}>
+                      <label htmlFor="message" style={{ fontSize: "0.875rem", fontWeight: 700, color: "var(--text-main)" }}>Message</label>
+                      <textarea id="message" name="message" rows="4" placeholder="How can I help you?" style={{ padding: "0.8rem 1rem", borderRadius: "0.5rem", border: "1px solid var(--border)", background: "transparent", fontFamily: "inherit", resize: "vertical" }} required></textarea>
+                      <ValidationError prefix="Message" field="message" errors={formState.errors} style={{ color: "red", fontSize: "0.8rem" }} />
+                    </div>
+                    <Button type="submit" disabled={formState.submitting} style={{ width: "100%", justifyContent: "center" }}>
+                      {formState.submitting ? "Sending…" : "Send Message"}
+                    </Button>
+                  </form>
                 )}
               </motion.div>
 
@@ -459,18 +459,18 @@ export default function HomePage() {
 
                   <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
                     <a href="mailto:codewithhammad.dev@gmail.com" className="bento-box" style={{ padding: "1.25rem", display: "flex", alignItems: "center", gap: "1rem", textDecoration: "none", background: "var(--bg-surface)" }}>
-                      <div className="contact-icon" style={{ background: "var(--brand-alpha)", width: "3rem", height: "3rem", borderRadius: "0.5rem", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--brand-dark)" }}><Mail size={20} /></div>
-                      <div>
+                      <div className="contact-icon" style={{ flexShrink: 0, background: "var(--brand-alpha)", width: "3rem", height: "3rem", borderRadius: "0.5rem", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--brand-dark)" }}><Mail size={20} /></div>
+                      <div style={{ minWidth: 0 }}>
                         <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.05em" }}>Email</div>
-                        <div style={{ fontWeight: 700, color: "var(--text-main)" }}>codewithhammad.dev@gmail.com</div>
+                        <div style={{ fontWeight: 700, color: "var(--text-main)", wordBreak: "break-all" }}>codewithhammad.dev@gmail.com</div>
                       </div>
                     </a>
 
                     <a href="tel:+917203053578" className="bento-box" style={{ padding: "1.25rem", display: "flex", alignItems: "center", gap: "1rem", textDecoration: "none", background: "var(--bg-surface)" }}>
-                      <div className="contact-icon" style={{ background: "var(--brand-alpha)", width: "3rem", height: "3rem", borderRadius: "0.5rem", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--brand-dark)" }}><Phone size={20} /></div>
-                      <div>
+                      <div className="contact-icon" style={{ flexShrink: 0, background: "var(--brand-alpha)", width: "3rem", height: "3rem", borderRadius: "0.5rem", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--brand-dark)" }}><Phone size={20} /></div>
+                      <div style={{ minWidth: 0 }}>
                         <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.05em" }}>Phone</div>
-                        <div style={{ fontWeight: 700, color: "var(--text-main)" }}>+91 (720) 305-3578</div>
+                        <div style={{ fontWeight: 700, color: "var(--text-main)", wordBreak: "break-word" }}>+91 (720) 305-3578</div>
                       </div>
                     </a>
                   </div>
