@@ -18,7 +18,7 @@ export function Footer() {
           <div className="footer-brand">
             <div className="footer-brand-title">Hammad Jagarala</div>
             <p className="footer-brand-description">
-              Backend-first. Full stack by nature. Building systems that scale and interfaces that don't lie about what they are.
+              Backend-first. Full stack by nature. Building systems and interfaces that don't lie about what they are.
             </p>
             <div className="footer-social">
               <Button variant="ghost" size="sm" asChild>
@@ -78,7 +78,7 @@ export function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <div className="footer-copyright">© 2025 Hammad Jagarala. All rights reserved.</div>
+          <div className="footer-copyright">© 2026 Hammad Jagarala. All rights reserved.</div>
           <div className="footer-actions">
             <Button size="sm" asChild>
               <a href="/Hammad_Jagarala_Resume.pdf" download target="_blank" rel="noopener noreferrer">

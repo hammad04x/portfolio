@@ -15,9 +15,9 @@ import smsThumbnail from "../components/images/smsThumbnail.png"
 
 const techStack = {
   frontend: ["React.js", "Next.js", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"],
-  backend: ["Java", "Spring Boot", "Node.js", "Express.js", "REST APIs", "JWT Auth"],
-  database: ["MySQL", "Hibernate", "JPA"],
-  tools: ["Git", "GitHub", "Postman", "Maven", "VS Code", "IntelliJ Idea", "Vite"],
+  backend: ["Node.js", "Express.js", "REST APIs", "JWT Auth", "Prisma ORM"],
+  database: ["MySQL"],
+  tools: ["Git", "GitHub", "Postman", "VS Code", "Vite"],
 };
 
 const projects = [
@@ -52,18 +52,18 @@ const projects = [
 
 const experiences = [
   {
+    company: "Quba Info Tech",
+    role: "Backend Developer Intern",
+    duration: "February 2026 — Present",
+    desc: "Building real-world client projects from scratch. Owning the full backend architecture with Node.js, Express.js, and Prisma ORM,while also building modern frontends with Next.js. Collaborating with a team using Slack, shipping features that go into actual production systems.",
+    skills: ["Node.js", "Express.js", "Prisma ORM", "MySQL", "Next.js", "REST APIs"],
+  },
+  {
     company: "Valudas Tech Park",
     role: "Full Stack Developer Trainee",
     duration: "June 2024 — January 2026",
-    desc: "Completed an intensive full-stack training program where I went from fundamentals to shipping real products. Built an e-commerce platform, a real estate web app, and several other client-facing projects. Gained deep hands-on experience integrating third-party services like Google Auth and Razorpay into production-ready applications.",
-    skills: ["HTML", "CSS", "Tailwind Css", "JavaScript", "React", "Node.js", "Express.js", "MySQL", "JWT", "Google Auth", "Razorpay"],
-  },
-  {
-    company: "Quba Info Tech",
-    role: "Software Developer Intern",
-    duration: "February 2026 — Present",
-    desc: "Currently working on real-world client projects in a professional Agile environment. Deepening expertise in Java and Spring Boot for backend architecture while also building modern frontends with Next.js. Collaborating with a team using Jira and Slack, shipping features that go into actual production systems.",
-    skills: ["Java", "Spring Boot", "Node.js", "Express.js", "Tailwind Css", "Next.js", "REST APIs", "MySQL", "Slack"],
+    desc: "Completed an intensive full-stack training program going from fundamentals to shipping real client-facing products. Built an e-commerce platform, a sweets & bakery business site, and several other projects. Gained hands-on experience integrating third-party services like Razorpay into production-ready applications.",
+    skills: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React", "Node.js", "Express.js", "MySQL", "JWT", "Razorpay"],
   },
 ];
 
@@ -79,9 +79,9 @@ export default function HomePage() {
     <>
       <Helmet>
         {/* ── Primary ── */}
-        <title>Hammad Jagarala | Full Stack Developer — React, Spring Boot, Node.js</title>
-        <meta name="description" content="Hammad Jagarala is a Full Stack Developer from Gujarat, India, building production-grade apps with Java, Spring Boot, React, and Node.js. Available for freelance and full-time opportunities." />
-        <meta name="keywords" content="Hammad Jagarala, Full Stack Developer, React Developer, Spring Boot Developer, Java Developer, Node.js Developer, portfolio, portfolio website, developer portfolio, web developer India, hire developer, portfolio website template, hammad jagarala portfolio, Gujarat developer" />
+        <title>Hammad Jagarala | Backend Developer — Node.js, Express.js, Next.js</title>
+        <meta name="description" content="Hammad Jagarala is a Backend Developer from Gujarat, India specialising in Node.js, Express.js, and Next.js. View portfolio projects, case studies, and hire for freelance or full-time opportunities." />
+        <meta name="keywords" content="Hammad Jagarala, Backend Developer, Node.js Developer, Express.js Developer, Next.js Developer, React Developer, portfolio, portfolio website, developer portfolio, web developer India, hire developer, portfolio website template, hammad jagarala portfolio, Gujarat developer" />
         <meta name="author" content="Hammad Jagarala" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://jagaralahammad.vercel.app/" />
@@ -90,19 +90,19 @@ export default function HomePage() {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Hammad Jagarala — Portfolio" />
         <meta property="og:url" content="https://jagaralahammad.vercel.app/" />
-        <meta property="og:title" content="Hammad Jagarala | Full Stack Developer — React, Spring Boot, Node.js" />
-        <meta property="og:description" content="Full Stack Developer building production-grade systems with Java, Spring Boot, React & Node.js. Explore case studies and projects." />
+        <meta property="og:title" content="Hammad Jagarala | Backend Developer — Node.js, Express.js, Next.js" />
+        <meta property="og:description" content="Backend Developer specialising in Node.js, Express.js and Next.js. Explore case studies, open-source projects, and get in touch." />
         <meta property="og:image" content="https://jagaralahammad.vercel.app/preview.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Hammad Jagarala — Full Stack Developer Portfolio" />
+        <meta property="og:image:alt" content="Hammad Jagarala — Backend Developer Portfolio" />
         <meta property="og:locale" content="en_IN" />
 
         {/* ── Twitter Card ── */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@hammad04x" />
-        <meta name="twitter:title" content="Hammad Jagarala | Full Stack Developer" />
-        <meta name="twitter:description" content="Java, Spring Boot, React & Node.js developer from Gujarat, India. Portfolio, projects & case studies." />
+        <meta name="twitter:title" content="Hammad Jagarala | Backend Developer" />
+        <meta name="twitter:description" content="Node.js, Express & Next.js developer from India. Explore my portfolio and case studies." />
         <meta name="twitter:image" content="https://jagaralahammad.vercel.app/preview.jpg" />
         <meta name="twitter:image:alt" content="Hammad Jagarala Portfolio" />
 
@@ -117,10 +117,10 @@ export default function HomePage() {
             "https://github.com/hammad04x",
             "https://www.linkedin.com/in/hammad-jagarala-240b83260/"
           ],
-          "jobTitle": "Full Stack Developer",
+          "jobTitle": "Backend Developer",
           "worksFor": { "@type": "Organization", "name": "Quba Info Tech" },
           "address": { "@type": "PostalAddress", "addressRegion": "Gujarat", "addressCountry": "IN" },
-          "knowsAbout": ["Java", "Spring Boot", "React", "Node.js", "MySQL", "REST APIs", "JWT", "JavaScript", "Express.js"],
+          "knowsAbout": ["Node.js", "Express.js", "Next.js", "React", "MySQL", "REST APIs", "JWT", "JavaScript", "Prisma ORM"],
           "email": "codewithhammad.dev@gmail.com",
           "telephone": "+917203053578"
         })}</script>
@@ -130,7 +130,7 @@ export default function HomePage() {
           "@context": "https://schema.org",
           "@type": "ItemList",
           "name": "Hammad Jagarala — Projects",
-          "description": "Portfolio projects by Hammad Jagarala — Full Stack Developer",
+          "description": "Portfolio projects by Hammad Jagarala — Backend Developer",
           "itemListElement": [
             {
               "@type": "ListItem", "position": 1,
@@ -162,16 +162,17 @@ export default function HomePage() {
         <section id="home" className="hero-section">
           <div className="hero-container">
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} className="hero-badge">
-              Available for Opportunities
+              AVAILABLE FOR OPPORTUNITIES
             </motion.div>
 
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
               <h1 className="hero-title">
-                <span>Hammad</span> Jagarala.
-                Backend-First. Full Stack by Nature.
+                <span>Hammad</span> Jagarala.<br />
+                Backend-First. Full Stack<br />
+                by Nature.
               </h1>
               <p className="hero-description">
-                I build backend systems in Java/Spring Boot and full-stack products with React and Node.js — clean architecture, secure APIs, real-world scale. Backend-first. Always.
+                I build backend systems in Node.js/Express.js and full-stack products with Next.js and React — clean architecture, secure APIs, real-world scale. Backend-first. Always.
               </p>
 
               <div className="hero-buttons">
@@ -202,7 +203,7 @@ export default function HomePage() {
                     I'm Hammad — a Full Stack Developer from Gujarat, India, building backend systems that scale and frontends that don't lie about what they are. I started with curiosity and stayed for the architecture.
                   </p>
                   <p>
-                    My core is <strong>Java and Spring Boot</strong> — layered systems, clean APIs, real security. But I speak React fluently, and I've shipped full products from database schema to pixel-perfect UI.
+                    My core is <strong>Node.js and Express.js</strong> — layered systems, clean APIs, real security. I speak React fluently, and I've shipped full products from database schema to pixel-perfect UI.
                   </p>
                   <p>
                     I'm not chasing hype stacks. I'm building depth — because the engineers who get hired at great companies aren't the ones who know everything, they're the ones who truly know <em>something</em>.
@@ -264,15 +265,11 @@ export default function HomePage() {
                   <div className="skills-category-title">
                     <Database size={20} className="text-brand-primary" /> Database
                   </div>
-                  <div className="marquee-track">
-                    {[...Array(4)].map((_, i) => (
-                      <React.Fragment key={i}>
-                        {techStack.database.map(skill => (
-                          <div key={`d-${i}-${skill}`} className="marquee-item">
-                            <span className="marquee-item-name">{skill}</span>
-                          </div>
-                        ))}
-                      </React.Fragment>
+                  <div style={{ display: "flex", gap: "2rem", paddingLeft: "5%", flexWrap: "wrap" }}>
+                    {techStack.database.map(skill => (
+                      <div key={`d-${skill}`} className="marquee-item">
+                        <span className="marquee-item-name">{skill}</span>
+                      </div>
                     ))}
                   </div>
                 </div>

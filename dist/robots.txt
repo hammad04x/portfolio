@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# Disallow admin/internal paths (add any if needed)
+Disallow: /dist/
+
+# Crawl-delay hint for polite bots
+Crawl-delay: 10
+
 Sitemap: https://jagaralahammad.vercel.app/sitemap.xml
