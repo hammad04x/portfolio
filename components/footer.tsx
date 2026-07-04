@@ -9,7 +9,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <div className="text-2xl font-bold text-gray-900 mb-4">Full Stack Developer</div>
+            <div className="text-2xl font-bold text-gray-900 mb-4">MERN Stack Developer</div>
             <p className="text-gray-600 mb-4 max-w-md">
               Passionate about creating modern web experiences with clean code and innovative solutions.
             </p>

@@ -29,7 +29,7 @@ const projectData = {
   "sheetal-sweets": {
     title: "Sheetal Sweets & Bakery",
     date: "2025",
-    role: "Full Stack Developer",
+    role: "MERN Stack Developer",
     description: "A fully responsive business website for a local sweets and bakery brand. Built to establish a premium digital presence with product showcasing, brand storytelling, and a clean user experience that converts visitors into customers. Deployed on a Hostinger VPS with a Node.js/Express backend.",
     image: sheetalThumbnail,
     gallery: [
@@ -78,7 +78,7 @@ const projectData = {
   "ecommerce-website": {
     title: "ZepX E-commerce Platform",
     date: "February 2025",
-    role: "Full Stack Developer",
+    role: "MERN Stack Developer",
     description: "A comprehensive e-commerce solution with dynamic product management, JWT authentication, and secure payment processing via Razorpay. Built completely from scratch to handle real-world shopping experiences.",
     image: zepxImage,
     gallery: [zepx1, zepx2, zepx3, zepx4, zepx5, zepx6, zepx7, zepx8],

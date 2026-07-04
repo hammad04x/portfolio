@@ -53,14 +53,21 @@ const projects = [
 const experiences = [
   {
     company: "Quba Info Tech",
-    role: "Full Stack Developer Intern",
-    duration: "February 2026 — Present",
+    role: "MERN Stack Developer",
+    duration: "July 2026 — Present",
+    desc: "Working as a full-time MERN Stack Developer. Architecting scalable backend systems, developing robust APIs, and building dynamic frontend interfaces. Collaborating with cross-functional teams to deliver high-quality production applications.",
+    skills: ["Node.js", "Express.js", "Prisma ORM", "MySQL", "Next.js", "React", "REST APIs"],
+  },
+  {
+    company: "Quba Info Tech",
+    role: "MERN Stack Developer Intern",
+    duration: "February 2026 — July 2026",
     desc: "Building real-world client projects from scratch. Owning the full backend architecture with Node.js, Express.js, and Prisma ORM,while also building modern frontends with Next.js. Collaborating with a team using Slack, shipping features that go into actual production systems.",
     skills: ["Node.js", "Express.js", "Prisma ORM", "MySQL", "Next.js","Tailwind CSS","Slack", "REST APIs"],
   },
   {
     company: "Valudas Tech Park",
-    role: "Full Stack Developer Trainee",
+    role: "MERN Stack Developer Trainee",
     duration: "June 2024 — January 2026",
     desc: "Completed an intensive full-stack training program going from fundamentals to shipping real client-facing products. Built an e-commerce platform, a sweets & bakery business site, and several other projects. Gained hands-on experience integrating third-party services like Razorpay into production-ready applications.",
     skills: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React", "Node.js", "Express.js", "MySQL", "JWT", "Razorpay"],
@@ -79,9 +86,9 @@ export default function HomePage() {
     <>
       <Helmet>
         {/* ── Primary ── */}
-        <title>Hammad Jagarala | Full Stack Developer — Node.js, Express.js, Next.js</title>
-        <meta name="description" content="Hammad Jagarala is a Full Stack Developer from Gujarat, India specialising in Node.js, Express.js, and Next.js. View portfolio projects, case studies, and hire for freelance or full-time opportunities." />
-        <meta name="keywords" content="Hammad Jagarala, Full Stack Developer, Node.js Developer, Express.js Developer, Next.js Developer, React Developer, portfolio, portfolio website, developer portfolio, web developer India, hire developer, portfolio website template, hammad jagarala portfolio, Gujarat developer" />
+        <title>Hammad Jagarala | MERN Stack Developer — Node.js, Express.js, Next.js</title>
+        <meta name="description" content="Hammad Jagarala is a MERN Stack Developer from Gujarat, India specialising in Node.js, Express.js, and Next.js. View portfolio projects, case studies, and hire for freelance or full-time opportunities." />
+        <meta name="keywords" content="Hammad Jagarala, MERN Stack Developer, Node.js Developer, Express.js Developer, Next.js Developer, React Developer, portfolio, portfolio website, developer portfolio, web developer India, hire developer, portfolio website template, hammad jagarala portfolio, Gujarat developer" />
         <meta name="author" content="Hammad Jagarala" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://jagaralahammad.vercel.app/" />
@@ -90,18 +97,18 @@ export default function HomePage() {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Hammad Jagarala — Portfolio" />
         <meta property="og:url" content="https://jagaralahammad.vercel.app/" />
-        <meta property="og:title" content="Hammad Jagarala | Full Stack Developer — Node.js, Express.js, Next.js" />
-        <meta property="og:description" content="Full Stack Developer specialising in Node.js, Express.js and Next.js. Explore case studies, open-source projects, and get in touch." />
+        <meta property="og:title" content="Hammad Jagarala | MERN Stack Developer — Node.js, Express.js, Next.js" />
+        <meta property="og:description" content="MERN Stack Developer specialising in Node.js, Express.js and Next.js. Explore case studies, open-source projects, and get in touch." />
         <meta property="og:image" content="https://jagaralahammad.vercel.app/preview.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Hammad Jagarala — Full Stack Developer Portfolio" />
+        <meta property="og:image:alt" content="Hammad Jagarala — MERN Stack Developer Portfolio" />
         <meta property="og:locale" content="en_IN" />
 
         {/* ── Twitter Card ── */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@hammad04x" />
-        <meta name="twitter:title" content="Hammad Jagarala | Full Stack Developer" />
+        <meta name="twitter:title" content="Hammad Jagarala | MERN Stack Developer" />
         <meta name="twitter:description" content="Node.js, Express & Next.js developer from India. Explore my portfolio and case studies." />
         <meta name="twitter:image" content="https://jagaralahammad.vercel.app/preview.jpg" />
         <meta name="twitter:image:alt" content="Hammad Jagarala Portfolio" />
@@ -117,7 +124,7 @@ export default function HomePage() {
             "https://github.com/hammad04x",
             "https://www.linkedin.com/in/hammad-jagarala-240b83260/"
           ],
-          "jobTitle": "Full Stack Developer",
+          "jobTitle": "MERN Stack Developer",
           "worksFor": { "@type": "Organization", "name": "Quba Info Tech" },
           "address": { "@type": "PostalAddress", "addressRegion": "Gujarat", "addressCountry": "IN" },
           "knowsAbout": ["Node.js", "Express.js", "Next.js", "React", "MySQL", "REST APIs", "JWT", "JavaScript", "Prisma ORM"],
@@ -130,7 +137,7 @@ export default function HomePage() {
           "@context": "https://schema.org",
           "@type": "ItemList",
           "name": "Hammad Jagarala — Projects",
-          "description": "Portfolio projects by Hammad Jagarala — Full Stack Developer",
+          "description": "Portfolio projects by Hammad Jagarala — MERN Stack Developer",
           "itemListElement": [
             {
               "@type": "ListItem", "position": 1,
@@ -200,7 +207,7 @@ export default function HomePage() {
                 <h3 style={{ fontSize: "1.75rem", fontWeight: "800", marginBottom: "1.5rem" }}>Code is craft. I treat it that way.</h3>
                 <div className="about-text-content">
                   <p>
-                    I'm Hammad — a Full Stack Developer from Gujarat, India, building backend systems that scale and frontends that don't lie about what they are. I started with curiosity and stayed for the architecture.
+                    I'm Hammad — a MERN Stack Developer from Gujarat, India, building backend systems that scale and frontends that don't lie about what they are. I started with curiosity and stayed for the architecture.
                   </p>
                   <p>
                     My core is <strong>Node.js and Express.js</strong> — layered systems, clean APIs, real security. I speak React fluently, and I've shipped full products from database schema to pixel-perfect UI.
